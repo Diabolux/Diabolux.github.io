@@ -1,7 +1,60 @@
 /* Menu */
 
-#menu ul
+/* Affichage du menu en mode flex et sans formatage */
+nav ul 
 {
     display: flex;
-    list-style: none;
+    list-style-type: none;    
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    border-bottom: 2px solid transparent;
+    
+}
+
+nav a:hover
+{
+    color: blue;
+    border-bottom: 2px solid green;
+}
+
+nav ul li
+{
+    flex: 1 1 auto; /* Permet aux éléments d'avoir une taille de base relative à leur contenu afin de pouvoir grandir et occuper l'espace vide ou rétrécir pour laisser de la place à de nvx éléments */
+    text-align: center;
+    position: relative;
+}
+
+.sous
+{
+    display: none; /* Permet de ne pas afficher les sous-menus sur la page */
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sous li
+{
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.sous a
+{
+    padding: 10px;
+}
+
+.sous a:hover
+{
+    border-bottom: none;
 }
