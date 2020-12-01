@@ -10,52 +10,79 @@
 <body>
     <header>
         <div id="titre_principal">
-            <div id="logo">
-                <img src="https://keepthemove.com/images/logo-fonce.png" alt="Logo_KTM">
+            <div id="logoKTM">
+                <img src="https://keepthemove.com/images/logo-fonce.png" alt="Logo KTM">
             </div>
-            <h1>KeepTheMove Solution</h1>
         </div>
+        <section>
+            <nav>
+                <ul>
+                    <li> <a href="#presentation" title="Présentation de KeepTheMove">Présentation</a></li>
+                    <li class="deroulant"> <a href="#solutions" title="Nos solutions">Nos solutions &ensp;</a>
+                        <ul class="sousmenu">
+                            <li><a href="#RSE" title="RSE">RSE</a></li>
+                            <li><a href="#ecommerce" title="E-commerce">E-commerce</a></li>
+                            <li><a href="#annonces" title="Petites annonces">Petites annonces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#realisations" title="Nos réalisations">Nos réalisations</a></li>
+                    <li><a href="#contact" title="Nous contacter">Contactez-nous</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
-    <section>
-        <nav>
-            <ul>
-                <li> <a href="#presentation" title="Présentation de KeepTheMove">Présentation</a></li>
-                <li class="deroulant"> <a href="#solutions" title="Nos solutions">Nos solutions &ensp;</a>
-                    <ul class="sous">
-                        <li><a href="#RSE" title="RSE">RSE</a></li>
-                        <li><a href="#ecommerce" title="E-commerce">E-commerce</a></li>
-                        <li><a href="#annonces" title="Petites annonces">Petites annonces</a></li>
-                    </ul>
-                </li>
-                <li><a href="#realisations" title="Nos réalisations">Nos réalisations</a></li>
-                <li><a href="#contact" title="Nous contacter">Contactez-nous</a></li>
-            </ul>
-        </nav>
-    </section>
+    <div id="diapo">
 
-    <section id="presentation">
-        <h1>Présentation de KeepTheMove</h1>
+    </div>
 
-    </section>
+    <div id="corpsDuSite">
+        <section id="presentation">
+            <h1>Présentation de KeepTheMove</h1>
 
-    <section id="solutions">
-        <h1>Vos problèmes, nos solutions !</h1>
-        <h2 id="RSE">RSE</h2>
-        <h2 id="ecommerce">E-commerce</h2>
-        <h2 id="annonces">Petites annonces</h2>
+        </section>
 
-    </section>
+        <section id="solutions">
+            <h1>Vos problèmes, nos solutions !</h1>
+            <h2 id="RSE">RSE</h2>
+            <h2 id="ecommerce">E-commerce</h2>
+            <h2 id="annonces">Petites annonces</h2>
 
-    <section id="realisations">
-        <h1>Nos réalisations</h1>
+        </section>
 
-    </section>
+        <section id="realisations">
+            <h1>Nos réalisations</h1>
+            <h2>Carquef'city</h2>
+            <img src="images/carquef_logo.PNG" alt="LogoCarquef" id="logoCarquef">
 
-    <section id="contact">
-        <h1>Contactez-nous</h1>
 
-    </section>
+        </section>
+
+        <section id="contact">
+            <h1>Contactez-nous</h1>
+            <form action="" method="get" class="contact-form">
+                <label for="name">Nom Prénom :</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="societe">Société</label>
+                <input type="text" name="societe" id="societe">
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="email"> E-mail :</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="text"> Votre message :</label>
+                <input type="text" name="text" id="text" required>
+
+
+
+            </form>
+
+        </section>
+    </div>
+
 
     <footer>
 
