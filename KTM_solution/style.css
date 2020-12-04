@@ -10,10 +10,8 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto; /* Obligé de mettre marges en auto à droite et à gauche sinon la page n'est pas centrée. Pourquoi ? */
-    margin-right: auto;
+    width: 1200px;
+    margin: auto; /*Obligé de mettre marges en auto à droite et à gauche sinon la page n'est pas centrée*/
     border: black solid 1px;
     
 }
@@ -28,10 +26,18 @@ header
     left: 0px;
     position: fixed;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 75px;
     width: 100%;
     
+}
+
+.sousHeader
+{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #diapo
@@ -56,13 +62,15 @@ nav
 {
     border: black solid 1px;
     position: relative;
-    margin-right: 0px;
 }
 
-nav ul 
-{
+
+nav ul {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    margin: 0 !important;
+    padding: 19px;
 }
 
 nav li
