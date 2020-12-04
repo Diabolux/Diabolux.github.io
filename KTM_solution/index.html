@@ -5,7 +5,10 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <title>KTM Solution</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" />
 </head>
 
 
@@ -17,11 +20,19 @@
                     <img src="https://keepthemove.com/images/logo-fonce.png" alt="Logo KTM">
                 </div>
             </div>
-            <section>
+            <div>
                 <nav>
                     <ul>
                         <li> <a href="#presentation" title="Présentation de KeepTheMove">Présentation</a></li>
-                        <li class="deroulant"> <a href="#solutions" title="Nos solutions">Nos solutions</a>
+                        <li class="deroulant">
+                            <div class="flecheSousMenu">
+                                <div>
+                                    <a href="#solutions" title="Nos solutions">Nos solutions</a>
+                                </div>
+                                <div>
+                                    <i class="las la-angle-down"></i>
+                                </div>
+                            </div>
                             <ul class="sousmenu">
                                 <li><a href="#RSE" title="RSE"><i class="las la-level-up-alt"></i> RSE</a></li>
                                 <li><a href="#ecommerce" title="E-commerce">E-commerce</a></li>
@@ -32,7 +43,7 @@
                         <li><a href="#contact" title="Nous contacter">Contactez-nous</a></li>
                     </ul>
                 </nav>
-            </section>
+            </div>
         </div>
 
     </header>
@@ -83,10 +94,83 @@
 
         </section>
 
+        <section class="chiffresCles">
+            <div>
+                <p class="nombre">100</p>
+                <p>boutiques</p>
+            </div>
+            <div>
+                <p class="nombre">80 000€</p>
+                <p>chiffre d'affaire</p>
+            </div>
+            <div>
+                <p class="nombre">20 000</p>
+                <p>commandes</p>
+            </div>
+        </section>
+
         <section id="solutions">
             <h1>Vos problèmes, nos solutions !</h1>
-            <div>
-                <h2 id="RSE">RSE</h2>
+            <div class="deuxBlock">
+                <div class="blockIndi">
+                    <h2 id="RSE">RSE</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius
+                        ultricies.
+                        Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
+                        augue leo, facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus
+                        id
+                        lacus ut ipsum commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor
+                        quam varius ac. Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat
+                        condimentum odio, id venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum
+                        ligula ultricies eget. Donec pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus
+                        fringilla tincidunt interdum. Ut et lorem gravida, fermentum dui ac, laoreet enim.
+
+                        Quisque est mauris, dignissim id accumsan in, suscipit vel magna. Fusce diam ante, ultrices in
+                        orci
+                        at, aliquet molestie lectus. Sed ut eros viverra, dictum dolor sed, auctor nulla. Phasellus
+                        egestas
+                        porta augue, a vulputate quam aliquam sed. Maecenas semper ante ut quam iaculis bibendum.
+                        Phasellus
+                        ullamcorper metus eu ipsum tristique elementum. Aliquam rhoncus ultrices nunc non pretium. Duis
+                        sed
+                        mauris iaculis, tempus lacus nec, cursus ante.
+                    </p>
+                    <a href="#" title="espRSE">En savoir plus ...</a>
+
+                </div>
+
+                <div class="blockIndi">
+                    <h2 id="ecommerce">E-commerce</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius
+                        ultricies.
+                        Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
+                        augue leo, facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus
+                        id
+                        lacus ut ipsum commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor
+                        quam varius ac. Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat
+                        condimentum odio, id venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum
+                        ligula ultricies eget. Donec pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus
+                        fringilla tincidunt interdum. Ut et lorem gravida, fermentum dui ac, laoreet enim.
+
+                        Quisque est mauris, dignissim id accumsan in, suscipit vel magna. Fusce diam ante, ultrices in
+                        orci
+                        at, aliquet molestie lectus. Sed ut eros viverra, dictum dolor sed, auctor nulla. Phasellus
+                        egestas
+                        porta augue, a vulputate quam aliquam sed. Maecenas semper ante ut quam iaculis bibendum.
+                        Phasellus
+                        ullamcorper metus eu ipsum tristique elementum. Aliquam rhoncus ultrices nunc non pretium. Duis
+                        sed
+                        mauris iaculis, tempus lacus nec, cursus ante.
+                    </p>
+                    <a href="#" title="espRSE">En savoir plus ...</a>
+                </div>
+
+
+            </div>
+            <div id="annonces">
+                <h2 id="petitesAnnonces">Petites annonces</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius ultricies.
                     Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
@@ -103,49 +187,8 @@
                     ullamcorper metus eu ipsum tristique elementum. Aliquam rhoncus ultrices nunc non pretium. Duis sed
                     mauris iaculis, tempus lacus nec, cursus ante.
                 </p>
+                <a href="#" title="espRSE">En savoir plus ...</a>
             </div>
-            <div>
-                <h2 id="ecommerce">E-commerce</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius ultricies.
-                    Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
-                    augue leo, facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus id
-                    lacus ut ipsum commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor
-                    quam varius ac. Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat
-                    condimentum odio, id venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum
-                    ligula ultricies eget. Donec pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus
-                    fringilla tincidunt interdum. Ut et lorem gravida, fermentum dui ac, laoreet enim.
-
-                    Quisque est mauris, dignissim id accumsan in, suscipit vel magna. Fusce diam ante, ultrices in orci
-                    at, aliquet molestie lectus. Sed ut eros viverra, dictum dolor sed, auctor nulla. Phasellus egestas
-                    porta augue, a vulputate quam aliquam sed. Maecenas semper ante ut quam iaculis bibendum. Phasellus
-                    ullamcorper metus eu ipsum tristique elementum. Aliquam rhoncus ultrices nunc non pretium. Duis sed
-                    mauris iaculis, tempus lacus nec, cursus ante.
-                </p>
-            </div>
-            <div>
-                <h2 id="annonces">Petites annonces</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius ultricies.
-                    Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
-                    augue leo, facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus id
-                    lacus ut ipsum commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor
-                    quam varius ac. Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat
-                    condimentum odio, id venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum
-                    ligula ultricies eget. Donec pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus
-                    fringilla tincidunt interdum. Ut et lorem gravida, fermentum dui ac, laoreet enim.
-
-                    Quisque est mauris, dignissim id accumsan in, suscipit vel magna. Fusce diam ante, ultrices in orci
-                    at, aliquet molestie lectus. Sed ut eros viverra, dictum dolor sed, auctor nulla. Phasellus egestas
-                    porta augue, a vulputate quam aliquam sed. Maecenas semper ante ut quam iaculis bibendum. Phasellus
-                    ullamcorper metus eu ipsum tristique elementum. Aliquam rhoncus ultrices nunc non pretium. Duis sed
-                    mauris iaculis, tempus lacus nec, cursus ante.
-                </p>
-            </div>
-
-
-
-
         </section>
 
         <section id="realisations">
