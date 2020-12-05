@@ -1,33 +1,46 @@
-/* test gitpod depuis mon mac */
+/* Polices */
 
-*
-{
-    font-family: 'Barlow', sans-serif;
+
+@font-face {
+    font-family: "Barlow";
+    src: url("font/Barlow/Barlow-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: "Barlow", sans-serif;
     margin: 0;
     padding: 0;
 }
-/* Polices */
 
-h1
-{
-    color: blue;
+h1, h2 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
+h1 {
+    color: rgb(44, 62, 80);
+    padding: 40px 0 30px 0;
+}
 
-body
+.paragraphe
 {
+    font-size: 24px;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    margin: auto; /*Obligé de mettre marges en auto à droite et à gauche sinon la page n'est pas centrée*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    /*Obligé de mettre marges en auto sinon la page n'est pas centrée*/
     /* border: black solid 1px; */
-    
 }
 
 /* Header */
 
-header
-{
+header {
     /* border: black solid 1px; */
     background-color: white;
     box-shadow: 0px -3px 1em black;
@@ -37,46 +50,62 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
+    height: auto;
     width: 100%;
-    
 }
 
-.sousHeader
-{
-    width: 1200px;
+.sousHeader {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#diapo
-{
+#diapo {
     background: url(images/shopping.jpg);
     width: 100%;
-    height: 600px;
+    height: 900px;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#logoKTM img
-{
-    max-width: 200px;
+#backgroundTextDiapo{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    width: 60%;
+    height: 40%;
+}
+
+#textDiapo {
+    padding-top: 45px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#bouger {
+    color: rgb(144, 192, 39);
+}
+
+#logoKTM img {
+    width: 300px;
     height: auto;
     padding: 0 20px;
 }
 
 /* Menu */
 
-nav
-{
+nav {
     /* border: black solid 1px; */
     position: relative;
     width: 100%;
     padding-top: 12px;
 }
-
 
 nav ul {
     display: flex;
@@ -85,161 +114,176 @@ nav ul {
     margin: 0;
 }
 
-nav li
-{
+nav li {
     /* flex: 1 1 auto;  */
     /*Permet aux éléments d'avoir une taille de base relative à leur contenu afin de pouvoir grandir et occuper l'espace vide ou rétrécir pour laisser de la place à de nvx éléments */
     padding-right: 30px;
     font-size: 20px;
-
 }
 
-nav a
-{
+nav a {
     text-decoration: none;
     color: black;
     border-bottom: 2px solid transparent;
-    
 }
 
-nav a:hover
-{
-    color: blue;
-    border-bottom: 2px solid green;
+nav a:hover {
+    color: cornflowerblue;
+    border-bottom: 2px solid rgb(144, 192, 39);
 }
 
-.sousmenu
-{
-    display: none; /* Permet de ne pas afficher les sous-menus sur la page */
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-}
-
-.flecheSousMenu
-{
+.flecheSousMenu {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-nav > ul li:hover .sousmenu
-{
+
+.la-level-up-alt {
+    transform: rotate(90deg);
+}
+
+.sousmenu {
+    display: none;
+    /* Permet de ne pas afficher les sous-menus sur la page */
+    position: absolute;
+    padding-right: 0;
+    width: 250px;
+    z-index: 1000;
+}
+
+nav>ul li:hover .sousmenu {
     display: flex;
     flex-flow: column wrap;
 }
 
-.sousmenu li
-{
+.sousmenu li {
     /* flex: 1 1 auto; */
     text-align: left;
     background-color: white;
+    border-bottom: 2px solid gold;
     line-height: 2;
 }
 
-.sousmenu a
-{
+.sousmenu a {
     padding: 10px;
 }
 
-.sousmenu a:hover
-{
+.sousmenu a:hover {
     border-bottom: none;
 }
 
 /* Corps du site */
 
-#corpsDuSite
-{
+#corpsDuSite {
     display: flex;
     flex-direction: column;
 }
 
+/* Présentation */
 
-
-h1, h2
-{
-    padding-top: 20px;
-    padding-bottom: 15px;
+#prez {
+    display: flex;
+    align-items: center;
 }
 
+#prez p {
+    flex-grow: 3;
+    padding: 0 20px;
+}
+
+#prez img {
+    width: 40%;
+    padding: 0 50px;
+    border-radius: 20px;
+    /* Ne fonctionne pas, pourquoi ? */
+}
 
 /* Chiffres clés */
 
-.chiffresCles
-{
+.chiffresCles {
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
     background-color: cornflowerblue;
-    background-size: cover;
-    margin-top: 30px;
-    padding: 20px 0;
-    height: 70px;
-    font-size: 20px;
+    border-radius: 125px 0 125px 0;
+    margin-top: 50px;
+    padding: 50px 0;
+    height: auto;
+    font-size: 24px;
     line-height: 1.3;
     text-align: center;
 }
 
-.nombre
-{
-    font-size: 30px;
+.chiffreLogo {
+    display: flex;
+    align-items: center;
+}
+
+.chiffreLogo i {
+    font-size: 100px;
+    padding-right: 20px;
+}
+
+.textChiffre {
+    flex-direction: column;
+}
+
+.nombre {
+    font-size: 40px;
 }
 
 /* Solutions */
 
-.deuxBlock
-{
+.deuxBlock {
     display: flex;
     justify-content: space-around;
     padding-bottom: 40px;
 }
 
-.blockIndi
-{
+.blockIndi {
     color: white;
     flex-direction: column;
-    border:  rgb(144, 192, 39);
+    border: rgb(144, 192, 39);
     width: 500px;
     border-radius: 20px;
     padding: 20px;
     background-color: rgb(144, 192, 39);
 }
 
-#annonces
-{
+#annonces {
     color: white;
     border: cornflowerblue;
     background-color: cornflowerblue;
     border-radius: 20px;
     padding: 20px;
-    width: 1104px;
+    max-width: 1104px;
     margin: auto;
+}
 
+.enSavoirPlus {
+    padding-top: 20px;
+    padding-left: 5px;
+    /* text-decoration: wavy; */
 }
 
 /*Nos réalisations */
 
 /* Carquef'City */
 
-
-
 /*Formulaire de contact */
 
-.contact-form
-{
+.contact-form {
     display: flex;
     flex-direction: column;
     width: 800px;
 }
 
-#phone, #email, #name, #societe
-{
+#phone, #email, #name, #societe {
     width: 200px;
 }
 
-#text
-{
+#text {
     width: auto;
     min-height: 300px;
 }
