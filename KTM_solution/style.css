@@ -43,8 +43,6 @@ body {
     width: 100%;
     margin: auto;
     align-items: center;
-    /*Obligé de mettre marges en auto sinon la page n'est pas centrée*/
-    /* border: black solid 1px; */
 }
 
 section {
@@ -194,13 +192,11 @@ nav>ul li:hover .sousmenu {
 }
 
 #prez p {
-    flex-grow: 3;
-    padding: 0 20px;
+    padding: 20px 60px 20px 0;
 }
 
 #prez img {
     width: 40%;
-    padding: 0 50px;
     border-radius: 20px;
     /* Ne fonctionne pas, pourquoi ? */
 }
@@ -245,7 +241,7 @@ nav>ul li:hover .sousmenu {
 
 .blockContenu {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 20px 0;
 }
@@ -263,8 +259,7 @@ nav>ul li:hover .sousmenu {
 .blockImage img{
     
     width: 70%;
-    padding: 0 50px;
-    border-radius: 50px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -295,10 +290,6 @@ nav>ul li:hover .sousmenu {
 
 /*Formulaire de contact */
 
-.contact {
-    width: 100%;
-}
-
 .labelContact{
     display: none;
 }
@@ -314,6 +305,7 @@ input {
     width: 100%;
     font-size: 25px;
     padding-bottom: 50px;
+    margin: auto;
 }
 
 .champGlobalContactForm {
