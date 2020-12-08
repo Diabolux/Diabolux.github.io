@@ -41,10 +41,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
     margin: auto;
+    align-items: center;
     /*Obligé de mettre marges en auto sinon la page n'est pas centrée*/
     /* border: black solid 1px; */
+}
+
+section {
+    max-width: 1200px;
 }
 
 /* Header */
@@ -71,9 +75,8 @@ header {
 
 #diapo {
     background: url(images/bateau_nantes.jpg);
-    width: 1920px;
-    height: 900px;
-    margin: auto;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -111,7 +114,6 @@ header {
 /* Menu */
 
 nav {
-    /* border: black solid 1px; */
     position: relative;
     width: 100%;
     padding-top: 12px;
@@ -125,8 +127,6 @@ nav ul {
 }
 
 nav li {
-    /* flex: 1 1 auto;  */
-    /*Permet aux éléments d'avoir une taille de base relative à leur contenu afin de pouvoir grandir et occuper l'espace vide ou rétrécir pour laisser de la place à de nvx éléments */
     padding-right: 30px;
     font-size: 20px;
 }
@@ -153,7 +153,6 @@ nav a:hover {
 
 .sousmenu {
     display: none;
-    /* Permet de ne pas afficher les sous-menus sur la page */
     position: absolute;
     padding-right: 0;
     width: 250px;
@@ -166,7 +165,6 @@ nav>ul li:hover .sousmenu {
 }
 
 .sousmenu li {
-    /* flex: 1 1 auto; */
     text-align: left;
     background-color: white;
     border-bottom: 2px solid gold;
