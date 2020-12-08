@@ -29,7 +29,7 @@ h1 {
 }
 
 #margeTop {
-    scroll-margin-top: 3em;
+    scroll-margin-top: 4em;
 }
 
 .paragraphe
@@ -179,10 +179,10 @@ nav>ul li:hover .sousmenu {
 
 /* Corps du site */
 
-#corpsDuSite {
+/* #corpsDuSite {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* Présentation */
 
@@ -198,7 +198,6 @@ nav>ul li:hover .sousmenu {
 #prez img {
     width: 40%;
     border-radius: 20px;
-    /* Ne fonctionne pas, pourquoi ? */
 }
 
 /* Chiffres clés */
