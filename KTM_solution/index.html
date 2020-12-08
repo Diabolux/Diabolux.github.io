@@ -121,8 +121,12 @@
 
         <section id="solutions">
             <h1>Vos problèmes, nos solutions !</h1>
-            <div class="deuxBlock">
-                <div class="blockIndi">
+
+            <div class="blockContenu">
+                <div class="blockImage">
+                    <img src="images/chrono.jpg" alt="chrono">
+                </div>
+                <div class="blockText">
                     <h2 id="RSE">RSE</h2>
                     <p class="paragraphe">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius
@@ -140,8 +144,10 @@
                         <a href="#" title="espRSE" class="enSavoirPlus">En savoir plus ...</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="blockIndi">
+            <div class="blockContenu">
+                <div class="blockText">
                     <h2 id="ecommerce">E-commerce</h2>
                     <p class="paragraphe">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius
@@ -158,25 +164,33 @@
                     <div class="enSavoirPlus">
                         <a href="#" title="espRSE" class="enSavoirPlus">En savoir plus ...</a>
                     </div>
-
                 </div>
-
-
+                <div class="blockImage">
+                    <img src="images/chrono.jpg" alt="chrono">
+                </div>
             </div>
-            <div id="annonces">
-                <h2 id="petitesAnnonces">Petites annonces</h2>
-                <p class="paragraphe">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius ultricies.
-                    Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
-                    augue leo, facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus id
-                    lacus ut ipsum commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor
-                    quam varius ac. Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat
-                    condimentum odio, id venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum
-                    ligula ultricies eget. Donec pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus
-                    fringilla tincidunt interdum. Ut et lorem gravida, fermentum dui ac, laoreet enim.
-                </p>
-                <div class="enSavoirPlus">
-                    <a href="#" title="espRSE" class="enSavoirPlus">En savoir plus ...</a>
+
+            <div class="blockContenu">
+                <div class="blockImage">
+                    <img src="images/chrono.jpg" alt="chrono">
+                </div>
+                <div class="blockText">
+                    <h2 id="petitesAnnonces">Petites Annonces</h2>
+                    <p class="paragraphe">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius
+                        ultricies.
+                        Nunc porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras
+                        augue leo, facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus
+                        id
+                        lacus ut ipsum commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor
+                        quam varius ac. Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat
+                        condimentum odio, id venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum
+                        ligula ultricies eget. Donec pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus
+                        fringilla tincidunt interdum. Ut et lorem gravida, fermentum dui ac, laoreet enim.
+                    </p>
+                    <div class="enSavoirPlus">
+                        <a href="#" title="espRSE" class="enSavoirPlus">En savoir plus ...</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,20 +211,39 @@
             <h1>Contactez-nous</h1>
 
             <form action="" method="get" class="contact-form">
-                <label for="name">Nom Prénom :</label>
-                <input type="text" name="name" id="name" required>
+                <div class="champGlobalContactForm">
+                    <div>
+                        <div class="champContactForm">
+                            <label for="name" class="labelContact">Nom Prénom :</label>
+                            <input type="text" name="name" id="name" required placeholder=" Nom Prénom">
+                        </div>
+                        <div class="champContactForm">
+                            <label for="societe" class="labelContact">Société</label>
+                            <input type="text" name="societe" id="societe" placeholder=" Société">
+                        </div>
 
-                <label for="societe">Société</label>
-                <input type="text" name="societe" id="societe">
+                    </div>
 
-                <label for="phone">Téléphone :</label>
-                <input type="tel" name="phone" id="phone">
+                    <div>
+                        <div class="champContactForm">
+                            <label for="phone" class="labelContact">Téléphone :</label>
+                            <input type="tel" name="phone" id="phone" placeholder=" Téléphone">
 
-                <label for="email"> E-mail :</label>
-                <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="champContactForm">
+                            <label for="email" class="labelContact"> E-mail :</label>
+                            <input type="email" name="email" id="email" required placeholder=" E-mail">
+                        </div>
 
-                <label for="text"> Votre message :</label>
-                <input type="text" name="text" id="text" required>
+
+                    </div>
+                </div>
+                
+                <div class="champMessageContactForm">
+                    <label for="text"> Votre message :</label>
+                    <input type="text" name="text" id="text" required>
+                </div>
+
             </form>
 
         </section>
