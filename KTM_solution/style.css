@@ -313,13 +313,14 @@ input {
 }
 
 .champContactForm {
-    padding: 20px 20px;
+    padding: 10px 10px;
 }
 
 .champMessageContactForm {
     display: flex;
     flex-direction: column;
     width: 848px;
+    padding-top: 15px;
 }
 #phone, #email, #name, #societe {
     width: 400px;
