@@ -236,6 +236,10 @@ nav>ul li:hover .sousmenu {
     font-size: 40px;
 }
 
+#euro {
+    display: flex;
+}
+
 /* Solutions */
 
 .blockContenu {
@@ -319,7 +323,7 @@ input {
     display: flex;
     flex-direction: column;
     width: 848px;
-    padding-top: 15px;
+    padding: 15px 0px;
 }
 #phone, #email, #name, #societe {
     width: 400px;
@@ -329,3 +333,8 @@ input {
     width: auto;
     min-height: 300px;
 }
+
+.bouton_contact {
+    padding: 10px 20px;
+}
+

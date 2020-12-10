@@ -5,19 +5,31 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <title>KTM Solution</title>
+    <!-- icone -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
         integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
         crossorigin="anonymous" />
+    <!-- odometre -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+        integrity="sha512-jHurNV8IL4Q4DRHzlRaIboSWZqnA3KU6KTiRQrtU+jxE1MHxdiveHrztuHhyna6PWTE427SxNDDUqjaruirB2A=="
+        crossorigin="anonymous" />
 </head>
 
+<script type="text/javascript" src="odometer.js"></script>
+<!-- script odometre -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"
+    integrity="sha512-51WDTV7haD9BBDc8RWH2r5TnuSiRyAqEnbGyuKHYn+qpYCrCckxFeqlr1I5UoOULijyLV2vnHO9LS4MrAzHxwQ=="
+    crossorigin="anonymous"></script>
 
 <body>
     <header>
         <div class="sousHeader">
             <div id="titre_principal">
                 <div id="logoKTM">
-                    <a href="#" title="KeepTheMove"><img src="https://keepthemove.com/images/logo-fonce.png" alt="Logo KTM" ></a>
+                    <a href="#" title="KeepTheMove"><img src="https://keepthemove.com/images/logo-fonce.png"
+                            alt="Logo KTM"></a>
                 </div>
             </div>
             <div>
@@ -37,7 +49,8 @@
                                 <li><a href="#RSE" title="RSE"><i class="las la-level-up-alt"></i> RSE</a></li>
                                 <li><a href="#ecommerce" title="E-commerce"><i class="las la-level-up-alt"></i>
                                         E-commerce</a></li>
-                                <li><a href="#petitesAnnonces" title="Petites annonces"><i class="las la-level-up-alt"></i>
+                                <li><a href="#petitesAnnonces" title="Petites annonces"><i
+                                            class="las la-level-up-alt"></i>
                                         Petites annonces</a></li>
                             </ul>
                         </li>
@@ -73,19 +86,12 @@
             <h1>Présentation de KeepTheMove</h1>
             <div id="prez">
                 <p class="paragraphe">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius ultricies.
-                    Nunc
-                    porta ut enim ac gravida. Vestibulum sodales libero turpis, ac tempor ante gravida ut. Cras augue
-                    leo,
-                    facilisis eget sem ac, pharetra porttitor diam. Cras sed venenatis tellus. Phasellus id lacus ut
-                    ipsum
-                    commodo scelerisque at in justo. Vestibulum aliquet suscipit dui, vitae porttitor quam varius ac.
-                    Aliquam erat volutpat. Donec varius ut est et pharetra. Suspendisse placerat condimentum odio, id
-                    venenatis erat faucibus at. Etiam lobortis ornare lorem, sit amet bibendum ligula ultricies eget.
-                    Donec
-                    pretium sollicitudin velit, a elementum odio feugiat sed. Vivamus fringilla tincidunt interdum. Ut
-                    et
-                    lorem gravida, fermentum dui ac, laoreet enim.
+                    Conscients de la difficulté des producteurs/artisans et commerçants durant cette période de
+                    confinement, Keepthemove vous met à disposition gratuitement ses compétences et son savoir-faire
+                    nécessaires à la transformation/amélioration de votre activité durant cette période.
+                    <br><br>
+                    Keepthemove vous accompagnera gratuitement pour la mise en place de votre boutique, pour cela,
+                    complétez notre formulaire ou contactez-nous par téléphone.
                 </p>
                 <img src="images/chrono.jpg" alt="chrono" id="test">
             </div>
@@ -99,14 +105,18 @@
             <div class="chiffreLogo">
                 <i class="las la-store-alt"></i>
                 <div class="textChiffre">
-                    <p class="nombre">+100</p>
+                    <p class="nombre odometer" id="nbBoutique">0</p>
                     <p>boutiques</p>
                 </div>
             </div>
             <div class="chiffreLogo">
                 <i class="las la-coins"></i>
                 <div class="textChiffre">
-                    <p class="nombre">+80 000 €</p>
+                    <div id="euro">
+                         <p class="nombre odometer" id="nbChiffreAffaire">0</p>
+                         <p class="nombre">&nbsp;€</p>
+                    </div>
+                   
                     <p>chiffre d'affaire</p>
                 </div>
 
@@ -114,7 +124,7 @@
             <div class="chiffreLogo">
                 <i class="las la-shopping-cart"></i>
                 <div class="textChiffre">
-                    <p class="nombre">+2500</p>
+                    <p class="nombre odometer" id="nbCommande">0</p>
                     <p>commandes</p>
                 </div>
             </div>
@@ -151,7 +161,7 @@
 
             <div class="blockContenu">
                 <div class="blockText">
-                    <h2 id="ecommerce" >E-commerce</h2>
+                    <h2 id="ecommerce">E-commerce</h2>
                     <p class="paragraphe">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus ut leo varius
                         ultricies.
@@ -246,6 +256,8 @@
                     <label for="text"> Votre message :</label>
                     <input type="text" name="text" id="text" required>
                 </div>
+
+                <input type="button" value="Envoyer" class="bouton_contact">
 
             </form>
 
